@@ -14,78 +14,162 @@
 
     <hr>
 
-    <h2>Tarefa 1</h2>
-    <ul>
-      <li>3 grupos de dados e cada grupo deve conter 1 Text
-        Field e 1 Radio Button;</li>
-      <li>4 perguntas com 5 alternativas do tipo Radio Button;</li>
-      <li>Botão de envio;</li>
-      <li>Considerar a forma de envio de dados SEGURA.</li>
-    </ul>
+    <fieldset>
+      <h2>Tarefa 1</h2>
+      <ul>
+        <li>3 grupos de dados e cada grupo deve conter 1 Text Field e 1 Radio Button;</li>
+        <li>4 perguntas com 5 alternativas do tipo Radio Button;</li>
+        <li>Botão de envio;</li>
+        <li>Considerar a forma de envio de dados SEGURA.</li>
+      </ul>
 
-    <form action="" method="get">
-      <!-- Grupo 1 -->
-      <fieldset>
-        <legend>Dados Pessoais</legend>
-
-        Nome: <input type="text" name="nome">
-        Sobrenome: <input type="text" name="sobrenome">
-        Idade: <input type="number" name="idade" min="0">
+      <form action="#" method="get">
+        <!-- Grupo 1 -->
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+  
+          Nome: <input type="text" name="nome">
+          Sobrenome: <input type="text" name="sobrenome">
+          Idade: <input type="number" name="idade" min="0">
+          <br>
+  
+          Sexo:
+          <input type="radio" name="sexo" value="masc"> Masculino
+          <input type="radio" name="sexo" value="fem"> Feminino
+          <input type="radio" name="sexo" value="outro_sexo"> Outro
+          <input type="radio" name="sexo" value="nr_sexo"> Prefiro não responder
+          <input type="radio" name="sexo" value="nc_sexo"> Prefiro não me classificar
+          <br>
+          Se responder “Outra”, especifique: <input type="text" name="nome_sexo">
+          <br>
+  
+          Cor ou raça:
+          <input type="radio" name="raca_cor" value="branca"> Branca
+          <input type="radio" name="raca_cor" value="indigena"> Indígena
+          <input type="radio" name="raca_cor" value="parda"> Parda
+          <input type="radio" name="raca_cor" value="preta"> Preta
+          <input type="radio" name="raca_cor" value="outra_raca_cor"> Outra
+          <br>
+          Se responder “Outra”, especifique: <input type="text" name="nome_raca_cor">
+        </fieldset>
         <br>
-
-        Sexo:
-        <input type="radio" name="sexo" value="masc"> Masculino
-        <input type="radio" name="sexo" value="fem"> Feminino
-        <input type="radio" name="sexo" value="outro_sexo"> Outro
-        <input type="radio" name="sexo" value="nr_sexo"> Prefiro não responder
-        <input type="radio" name="sexo" value="nc_sexo"> Prefiro não me classificar
+  
+        <!-- Grupo 2 -->
+        <fieldset>
+          <legend>Formação Acadêmica</legend>
+  
+          Qual o nível máximo concluído?
+          <input type="radio" name="nivel_acad" value="ems_med"> Ensino médio
+          <input type="radio" name="nivel_acad" value="grad"> Graduação
+          <input type="radio" name="nivel_acad" value="pos_grad"> Pós-graduação
+          <input type="radio" name="nivel_acad" value="mestre"> Mestrado
+          <input type="radio" name="nivel_acad" value="doutor"> Doutorado
+          <br>
+  
+          Nome da instituição que cursou: <input type="text" name="nome_inst">
+        </fieldset>
         <br>
-        Se responder “Outra”, especifique: <input type="text" name="nome_sexo">
+  
+        <!-- Grupo 3 -->
+        <fieldset>
+          <legend>Ocupação Profissional</legend>
+  
+          Informe como prefere sua contratação:
+          <input type="radio" name="contrato_prof" value="aprendiz"> Aprendiz
+          <input type="radio" name="contrato_prof" value="estagio"> Estágio
+          <input type="radio" name="contrato_prof" value="temporario"> Contratação temporária (substituto/a, horista, etc.)
+          <input type="radio" name="contrato_prof" value="clt"> Contratação efetiva (CLT)
+          <input type="radio" name="contrato_prof" value="pj"> Pessoa Juridíca (PJ)
+        </fieldset>
+  
         <br>
-
-        Cor ou raça:
-        <input type="radio" name="raca_cor" value="branca"> Branca
-        <input type="radio" name="raca_cor" value="indigena"> Indígena
-        <input type="radio" name="raca_cor" value="parda"> Parda
-        <input type="radio" name="raca_cor" value="preta"> Preta
-        <input type="radio" name="raca_cor" value="outra_raca_cor"> Outra
-        <br>
-        Se responder “Outra”, especifique: <input type="text" name="nome_raca_cor">
-      </fieldset>
-      
-      <!-- Grupo 2 -->
-      <fieldset>
-        <legend>Formação Acadêmica</legend>
-
-        Qual o nível máximo concluído?
-        <input type="radio" name="nivel_acad" value="ems_med"> Ensino médio
-        <input type="radio" name="nivel_acad" value="grad"> Graduação
-        <input type="radio" name="nivel_acad" value="pos_grad"> Pós-graduação
-        <input type="radio" name="nivel_acad" value="mestre"> Mestrado
-        <input type="radio" name="nivel_acad" value="doutor"> Doutorado
-        <br>
-
-        Nome da instituição que cursou: <input type="text" name="nome_inst">
-      </fieldset>
-
-      <!-- Grupo 3 -->
-      <fieldset>
-        <legend>Ocupação Profissional</legend>
-
-        Informe como prefere sua contratação:
-        <input type="radio" name="contrato_prof" value="aprendiz"> Aprendiz
-        <input type="radio" name="contrato_prof" value="estagio"> Estágio
-        <input type="radio" name="contrato_prof" value="temporario"> Contratação temporária (substituto/a, horista, etc.)
-        <input type="radio" name="contrato_prof" value="clt"> Contratação efetiva (CLT)
-        <input type="radio" name="contrato_prof" value="pj"> Pessoa Juridíca (PJ)
-      </fieldset>
-
-      <br>
-
-      <input type="submit" value="Enviar">
-    </form>
+  
+        <input type="submit" value="Enviar">
+      </form>
+    </fieldset>
 
     <hr>
 
+    <fieldset>
+      <h2>Tarefa 2</h2>
+      <ul>
+        <li>
+          Possua 2 grupos de dados:
+          <ol>
+            <li>1 dropdown list com 5 elementos, 1 datalist com 3 elementos, 1 botão e 1 text area;</li>
+            <li>1 dropdown list com 6 elementos, 1 datalist com 2 elementos, 1 botão e 1 text area.</li>
+          </ol>
+        </li>
+        <li>Botão de envio.</li>
+      </ul>
+
+      <form action="#" method="get">
+        <!-- Grupo 1 - Reclamação -->
+        <fieldset>
+          <legend>Reclamação Cafezinho</legend>
+          
+          Qual o problema a relatar?
+          <select name="assunto_reclamacao">
+            <option value="">Selecione uma opção</option>
+            <option value="sem_cafe">Garrafa vazia</option>
+            <option value="cafe_fraco">O sabor estava fraco</option>
+            <option value="cafe_forte">O sabor estava forte</option>
+            <option value="cafe_frio">O café estava frio</option>
+            <option value="imp_outro">Outro</option>
+          </select>
+
+          Informe o setor:
+          <input list="setores">
+          <datalist id="setores">
+            <option value="RH">Recursos Humanos</option>
+            <option value="TI">Tecnologia da Informação</option>
+            <option value="ADM">Administrativo</option>
+          </datalist>
+          <br>
+
+          Descreva com detalhes o que ocorreu:
+          <br>
+          <textarea name="mens_reclamacao" cols="80" rows="12">Digite...</textarea>        
+          <br>
+
+          <button type="button">Salvar</button>
+        </fieldset>
+        <br>
+
+        <!-- Grupo 2 - Avaliação  -->
+        <fieldset>
+          <legend>Avaliação do Atendimento</legend>
+
+          Avalie seu atendimento:
+          <select name="assunto_elogio_sugestao">
+            <option value="">Selecione uma opção</option>
+            <option value="nota_1">1 - Péssimo</option>
+            <option value="nota_2">2 - Deve melhorar</option>
+            <option value="nota_3">3 - Bom</option>
+            <option value="nota_4">4 - Ótimo</option>
+            <option value="nota_5">5 - Excelente</option>
+            <option value="sem_nota">Prefiro não avaliar</option>
+          </select>
+
+          Informe a portaria:
+          <input list="portarias">
+          <datalist id="portarias">
+            <option value="ENTRADA">Portaria Entrada</option>
+            <option value="ESTACIONAMENTO">Portaria Estacionamento</option>
+          </datalist>
+          <br>
+
+          Descreva com detalhes o que ocorreu:
+          <br>
+          <textarea name="mens_reclamacao" cols="80" rows="12">Digite...</textarea>        
+          <br>
+
+          <button type="button">Salvar</button>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </fieldset>
   </body>
 </html>
