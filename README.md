@@ -5,3 +5,4 @@ Repo destinado ao módulo **Fundamentos de HTML (WACAD001)** do **Web Academy - 
 - [x] [Utilizando formatação de elementos](https://github.com/josuelustosa-webacademy2023/WACAD001-fundamentos-HTML/blob/main/tarefas-de-aula/tarefa-formatacao-de-elementos.html)
 - [x] [Tipos de Listas](https://github.com/josuelustosa-webacademy2023/WACAD001-fundamentos-HTML/blob/main/tarefas-de-aula/tarefa-listas.html)
 - [x] [Página Web sobre tags HTML](https://github.com/josuelustosa-webacademy2023/WACAD001-fundamentos-HTML/blob/main/tarefas-de-aula/tarefa-linha-horizontal.html)
+- [x] [Atividade Final do Módulo](https://github.com/josuelustosa-webacademy2023/WACAD001-fundamentos-HTML/tree/main/tafefa-final)
